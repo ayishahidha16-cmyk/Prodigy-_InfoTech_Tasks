@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prodigy Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome Back! 👋</h1>
+
+        <p>Login to your account</p>
+
+        <form method="POST" action="/login">
+
+            <label>Email:</label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Password:</label>
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>
+            Don't have an account?
+            <a href="/register">Sign up</a>
+        </p>
+
+    </div>
+
+</body>
+</html>
